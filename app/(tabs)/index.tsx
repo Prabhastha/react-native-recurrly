@@ -1,5 +1,5 @@
 import "@/global.css"
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 import {Link} from "expo-router";
 import { styled } from "nativewind"
 import {SafeAreaView as RNSafeAreaView} from 'react-native-safe-area-context'
@@ -18,7 +18,7 @@ export default function App() {
                 <Link href="/(auth)/sign-up" className="mt-4 rounded bg-primary text-white p-4">
                     Go To Sign Up
                 </Link>
-                <Link href="/app/subcriptions/spotify">Spotify Subcription</Link>
+                <Link href="/subcriptions/spotify">Spotify Subcription</Link>
                 <Link href={{
                     pathname: "/subcriptions/[id]",
                     params: {id : "claude"},
