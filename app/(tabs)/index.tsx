@@ -9,22 +9,16 @@ export default function App() {
     return (
         <SafeAreaView className="flex-1 bg-background p-5">
 
-                <Text className="text-xl font-bold text-success">
+                <Text className="text-5xl font-sans-extrabold text-success">
                     Welcome to Nativewind!
                 </Text>
-                <Link href="/(auth)/sign-in" className="mt-4 rounded bg-primary text-white p-4">
+                <Link href="/(auth)/sign-in" className="mt-4 font-sans-bold rounded bg-primary text-white p-4">
                     Go To Sign In
                 </Link>
-                <Link href="/(auth)/sign-up" className="mt-4 rounded bg-primary text-white p-4">
+                <Link href="/(auth)/sign-up" className="mt-4 font-sans-bold rounded bg-primary text-white p-4">
                     Go To Sign Up
                 </Link>
-                <Link href="/subcriptions/spotify">Spotify Subcription</Link>
-                <Link href={{
-                    pathname: "/subcriptions/[id]",
-                    params: {id : "claude"},
-                }}>
-                    Claude max subcription
-                </Link>
+
 
         </SafeAreaView>
 
